@@ -4,7 +4,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import {Link} from "react-router-dom"
 import ListarUsuario from "./ListarUsuario"
 import CrearUsuario from "./CrearUsuario"
-import EditarUsuario from "./EditarUsuario"
+import Actualizar from "./ActualizarUsuario"
 import EliminarUsuario from "./EliminarUsuario"
 
 
@@ -25,7 +25,7 @@ function AppUsuario() {
       <Routes>
           <Route path="/ListarUsuario" element={<ListarUsuario/>}></Route>
           <Route path="/CrearUsuario" element={<CrearUsuario/>}></Route>
-          <Route path="/EditarUsuario/:id" element={<EditarUsuario/>}></Route>
+          <Route path="/EditarUsuario/:id" element={<Actualizar/>}></Route>
           <Route path="/EliminarUsuario/:ud" element={<EliminarUsuario/>}></Route>
           
       </Routes>
