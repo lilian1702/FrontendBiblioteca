@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+}
+.tablaLibros{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 120px;
+    background-color: brown;
+}
+.tablaLibros th{
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    background-color: #da1616;
+    color: white;
+}
+.tablaLibros td{
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;    
+    background-color: #f2f2f2;
+}
+.tablaLibros tr{
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;    
+}
+.Editar{
+    background-color: #c4141a;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;  
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Eliminar{
+    background-color: #c4141a;
+    color: rgb(16, 10, 10);
+
+        
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+

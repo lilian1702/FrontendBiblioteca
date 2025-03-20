@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import './stilo.css';
 
 function ListarPrestamos(){
     const [Prestamo,setPrestamo]=useState([]);
@@ -22,6 +23,7 @@ function ListarPrestamos(){
                         <th>Fecha Prestamo</th>
                         <th>Fecha Devolucion</th>
                         <th>Estado</th>
+                        <th>option</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,9 +35,9 @@ function ListarPrestamos(){
                             <td>{res.fecha_prestamo}</td>
                             <td>{res.fecha_devolucion}</td>
                             <td>{res.estado}</td>
-                            <td><button className="edit" onClick={()=>{navigate(`/ActualizarReserva/${res.id}`)}}>Edit</button>
+                            <td><button className="edit" onClick={()=>{navigate(`/ActualizarReserva/${res.id}`)}}>Editar</button>
                             <button className="delete">Delete</button></td>
-                            <td>{res.nombreReserva}</td>
+                           
                             
                         </tr>
                     ))}

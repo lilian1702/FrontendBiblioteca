@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+}
+.tablaUser{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 120px;
+    background-color: brown;
+}
+.tablaUser th{
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    background-color: #da1616;
+    color: white;
+}
+.tablaUser td{
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;    
+    background-color: #f2f2f2;
+}
+.tablaUser tr{
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;    
+}
+.Edit{
+    background-color: #c4141a;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;  
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Delete{
+    background-color: #c4141a;
+    color: rgb(16, 10, 10);        
+    border-radius: 5px;
+    cursor: pointer;
+}
