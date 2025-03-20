@@ -10,6 +10,11 @@ import ListarUsuario from "./usuario/ListarUsuario"
 import CrearUsuario from "./usuario/CrearUsuario"
 import Actualizar from "./usuario/ActualizarUsuario"
 import EliminarUsuario from "./usuario/EliminarUsuario"
+import ListarLibro from "./libro/ListarLibro"
+import CrearLibro from "./libro/CrearLibro"
+import ActualizarLibro from "./libro/ActualizarLibro"
+import EliminarLibro from "./libro/EliminarLibro"
+
 
 
 
@@ -27,10 +32,10 @@ function App() {
             <li>Crud Usuario</li>
             <li><Link to="/ListarUsuario">Listar Usuario</Link></li>
             <li><Link to="/CrearUsuario">Crear Usuario</Link></li>
-            
-            
-          
-            
+            <li>Crud Libro</li>
+            <li><Link to="/ListarLibro">Listar Libro</Link></li>
+            <li><Link to="/CrearLibro">Crear Libro</Link></li>      
+                                  
           </ul>
         </nav>
       <Routes>
@@ -42,7 +47,13 @@ function App() {
         <Route path="/ListarUsuario" element={<ListarUsuario/>}></Route>
         <Route path="/CrearUsuario" element={<CrearUsuario/>}></Route>
         <Route path="/EditarUsuario/:id" element={<Actualizar/>}></Route>
-        <Route path="/EliminarUsuario/:ud" element={<EliminarUsuario/>}></Route>              
+        <Route path="/EliminarUsuario/:ud" element={<EliminarUsuario/>}></Route>
+
+        <Route path="/ListarLibro" element={<ListarLibro/>}></Route>
+        <Route path="/CrearLibro" element={<CrearLibro/>}></Route>
+        <Route path="/ActualizarLibro/:id" element={<ActualizarLibro/>}></Route>
+        <Route path="/EliminarLibro/:id" element={<EliminarLibro/>}></Route>  
+
           
       </Routes>
       </Router>
