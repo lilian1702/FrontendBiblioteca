@@ -39,12 +39,11 @@ function App() {
         <Route path="/ListarPrestamos" element={<ListarPrestamos/>}></Route>
         <Route path="/CrearPrestamos" element={<CrearPrestamos/>}></Route>
         <Route path="/ActualizarPrestamos/:id" element={<ActualizarPrestamos/>}></Route>
-        <Route path="/EliminarPrestamos" element={<EliminarPrestamos/>}></Route>
-      <Routes>          
-          <Route path="/ListarUsuario" element={<ListarUsuario/>}></Route>
-          <Route path="/CrearUsuario" element={<CrearUsuario/>}></Route>
-          <Route path="/EditarUsuario/:id" element={<Actualizar/>}></Route>
-          <Route path="/EliminarUsuario/:ud" element={<EliminarUsuario/>}></Route>              
+        <Route path="/EliminarPrestamos" element={<EliminarPrestamos/>}></Route>        
+        <Route path="/ListarUsuario" element={<ListarUsuario/>}></Route>
+        <Route path="/CrearUsuario" element={<CrearUsuario/>}></Route>
+        <Route path="/EditarUsuario/:id" element={<Actualizar/>}></Route>
+        <Route path="/EliminarUsuario/:ud" element={<EliminarUsuario/>}></Route>              
           
       </Routes>
       </Router>
