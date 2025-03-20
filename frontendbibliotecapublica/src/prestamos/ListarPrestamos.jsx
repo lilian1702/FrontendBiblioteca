@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import './stilo.css';
 
 function ListarPrestamos(){
     const [Prestamo,setPrestamo]=useState([]);
@@ -22,6 +23,7 @@ function ListarPrestamos(){
                         <th>Fecha Prestamo</th>
                         <th>Fecha Devolucion</th>
                         <th>Estado</th>
+                        <th>option</th>
                     </tr>
                 </thead>
                 <tbody>

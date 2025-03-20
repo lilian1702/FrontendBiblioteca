@@ -36,6 +36,10 @@ function App() {
             <li><Link to="/ListarLibro">Listar Libro</Link></li>
             <li><Link to="/CrearLibro">Crear Libro</Link></li>      
                                   
+            <li>Crud Libro</li>
+            <li><Link to="/ListarLibro">Listar Libro</Link></li>
+            <li><Link to="/CrearLibro">Crear Libro</Link></li>      
+                                  
           </ul>
         </nav>
       <Routes>

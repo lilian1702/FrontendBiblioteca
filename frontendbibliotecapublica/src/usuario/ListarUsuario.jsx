@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import { useEffect } from 'react';
 import {useNavigate} from 'react-router-dom';
+import './stilo.css';
 
 function ListarUsuarios(){
     const [usuarios, setUsuarios]= useState([]);
@@ -30,8 +31,8 @@ function ListarUsuarios(){
                             <td>{index.nombre}</td>
                             <td>{index.correo}</td>
                             <td>{index.telefono}</td>
-                            <td><button onClick={()=>navigate(`/ActualizarUsuario/${index.id}`)}>editar</button></td>
-                            <td><button onClick={()=>navigate(`/EliminarUsuario/${index.id}`)}>Eliminar</button></td>
+                            <td><button onClick={()=>navigate(`/ActualizarUsuario/${index.id}`)}>editar</button>
+                            <button onClick={()=>navigate(`/EliminarUsuario/${index.id}`)}>Eliminar</button></td>                            
                         </tr>
                     ))}
                 </tbody>

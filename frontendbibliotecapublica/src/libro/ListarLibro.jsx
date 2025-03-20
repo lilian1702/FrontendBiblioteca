@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import "./stilo.css";
 
 function ListarLibro() {
     const [libros, setLibros]= useState([]);
@@ -32,8 +33,8 @@ function ListarLibro() {
                             <td>{index.autor}</td>
                             <td>{index.anio_publicacion}</td>
                             <td>{index.stock}</td>
-                            <td><button onClick={()=>navigate(`/ActualizarLibro/${index.id}`)}>Editar</button></td>
-                            <td><button onClick={()=>navigate(`/EliminarLibro/${index.id}`)}>Eliminar</button></td>
+                            <td><button onClick={()=>navigate(`/ActualizarLibro/${index.id}`)}>Editar</button>
+                            <button onClick={()=>navigate(`/EliminarLibro/${index.id}`)}>Eliminar</button></td>                           
                         </tr>
                     ))}
                 </tbody>
