@@ -14,18 +14,14 @@ function App() {
         <nav>
           <ul>
            
-            <li><Link to="/CrudUsuarios">Crud Usuario</Link></li>
-            <li><Link to="/CrudLibro">Crud Libros</Link></li>
-            <li><Link to="/CrudPrestamos">Crud Prestamos</Link></li>
+           
             
           
             
           </ul>
         </nav>
       <Routes>
-          <Route path="/CrudUsuarios" element={<AppUsuario/>}></Route>
-          <Route path="/CrudLibro" element={<AppLibro/>}></Route>
-          <Route path="/CrudPrestamos" element={<AppPrestamos/>}></Route>
+          
           
           
       </Routes>
