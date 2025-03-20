@@ -1,27 +1,19 @@
-import React, { useState } from 'react';
-
+import { useParams } from "react-router-dom";
+  
 function EliminarUsuario() {
-    const [id, setId] = useState('');
+    const { id } = useParams();
+    const eliminar = async () => {
+        const response = await fetch(`http://localhost:3000/api/Usuario/${id}`, {
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" },
+            });
+    };
 
-    const handleDelete = async (e) => {   
-        
-            const respuesta = await fetch(`http://localhost:3000/api/Usuario/${id}`, {
-                method: 'DELETE',
-                headers: {
-                    "content-type": "application/json"
-                },
-                body: JSON.stringify({id})
-            });                   
-    }
     return (
-        <div>
-            <h1>Eliminar Usuario</h1>
-            <form onSubmit={handleDelete}>
-                <label>ID del Usuario</label>
-                <input type="text" onChange={(event) => setId(event.target.value)} placeholder="Ingrese el ID del usuario que desea eliminar"></input>
-                <button type="submit">Eliminar Usuario</button>
-            </form>
-        </div>)
+       <div>
+        <button onClick={eliminar}>Eliminar</button>
+       </div>
+    );
 }
 
 export default EliminarUsuario;

@@ -28,7 +28,7 @@ function App() {
           <ul>
             <li>Crud Prestamos</li>
             <li><Link to="/ListarPrestamos">Listar Prestamo</Link></li>
-            <li><Link to="/CrudPrestamos/CrearPrestamos">Crear Prestamo</Link></li>
+            <li><Link to="/CrearPrestamos">Crear Prestamo</Link></li>
             <li>Crud Usuario</li>
             <li><Link to="/ListarUsuario">Listar Usuario</Link></li>
             <li><Link to="/CrearUsuario">Crear Usuario</Link></li>
@@ -42,12 +42,12 @@ function App() {
         <Route path="/ListarPrestamos" element={<ListarPrestamos/>}></Route>
         <Route path="/CrearPrestamos" element={<CrearPrestamos/>}></Route>
         <Route path="/ActualizarPrestamos/:id" element={<ActualizarPrestamos/>}></Route>
-        <Route path="/EliminarPrestamos" element={<EliminarPrestamos/>}></Route>   
+        <Route path="/EliminarPrestamos/:id" element={<EliminarPrestamos/>}></Route>   
 
         <Route path="/ListarUsuario" element={<ListarUsuario/>}></Route>
         <Route path="/CrearUsuario" element={<CrearUsuario/>}></Route>
-        <Route path="/EditarUsuario/:id" element={<Actualizar/>}></Route>
-        <Route path="/EliminarUsuario/:ud" element={<EliminarUsuario/>}></Route>
+        <Route path="/ActualizarUsuario/:id" element={<Actualizar/>}></Route>
+        <Route path="/EliminarUsuario/:id" element={<EliminarUsuario/>}></Route>
 
         <Route path="/ListarLibro" element={<ListarLibro/>}></Route>
         <Route path="/CrearLibro" element={<CrearLibro/>}></Route>

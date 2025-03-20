@@ -12,7 +12,7 @@ function ListarUsuarios(){
     },[]);
     return(
         <div>
-            <h1>LISTA DE USUAROS</h1>
+            <h1>LISTA DE USUARIOS</h1>
             <table className="tablaUsuarios">
                 <thead>
                     <tr>

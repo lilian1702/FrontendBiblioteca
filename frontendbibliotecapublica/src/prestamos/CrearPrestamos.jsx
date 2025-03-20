@@ -26,7 +26,7 @@ function CrearPrestamos() {
             <input type="text" onChange={(event)=>setFecha_devolucion(event.target.value)} placeholder="Escriba la fecha de devolucion" />
             <label >estado</label>
             <input type="text" onChange={(event)=>setEstado(event.target.value)} placeholder="Escriba el estado" />
-            <button type="submit">Registrar Reserva</button>
+            <button type="submit">Registrar Prestamos</button>
         </form>
         </div>
   )

@@ -1,9 +1,19 @@
-
+import { useParams } from "react-router-dom";
+  
 function EliminarPrestamos() {
+    const { id } = useParams();
+    const eliminar = async () => {
+        const response = await fetch(`http://localhost:3000/api/Prestamo/${id}`, {
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" },
+            });
+    };
+
     return (
-        <div>
-            <h1>Eliminar Prestamos</h1>
-        </div>
-    )
+       <div>
+        <button onClick={eliminar}>Eliminar</button>
+       </div>
+    );
 }
+
 export default EliminarPrestamos;

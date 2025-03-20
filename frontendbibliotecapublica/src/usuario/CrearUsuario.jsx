@@ -15,7 +15,7 @@ function CrearUsuario(){
     return (
         <div>
             <h1>Crear Usuario</h1>
-            <form onsubmit= {handleSubmit}>
+            <form onSubmit= {handleSubmit}>
                 <label>Nombre</label>
                 <input type="text" onChange={(event)=> setNombre(event.target.value)} placeholder="Escriba el nombre"></input>
                 <label>Correo</label>

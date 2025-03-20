@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 
 function ListarPrestamos(){
@@ -12,7 +12,7 @@ function ListarPrestamos(){
 
     return(
         <div>
-            <h1 className="h1">Lista de usuarios</h1>
+            <h1 className="h1">LISTA DE PRESTAMOS</h1>
             <table className="tablaUser">
                 <thead>
                     <tr>
@@ -33,10 +33,8 @@ function ListarPrestamos(){
                             <td>{res.fecha_prestamo}</td>
                             <td>{res.fecha_devolucion}</td>
                             <td>{res.estado}</td>
-                            <td><button className="edit" onClick={()=>{navigate(`/ActualizarReserva/${res.id}`)}}>Edit</button>
-                            <button className="delete">Delete</button></td>
-                            <td>{res.nombreReserva}</td>
-                            
+                            <td><button className="edit" onClick={()=>{navigate(`/ActualizarPrestamos/${res.id}`)}}>Edit</button>
+                            <button className="delete" onClick={()=>{navigate(`/EliminarPrestamos/${res.id}`)}}>Delete</button></td>
                         </tr>
                     ))}
                 </tbody>
