@@ -4,12 +4,10 @@ function CrearUsuario(){
     const [correo, setCorreo] = useState('');
     const [telefono, setTelefono] = useState('');
     const handleSubmit = async(e) => {
-        const respuesta= await fetch("http://localhost:3000/api/Usuario",{
+        const respuesta= await fetch("http://localhost:3000/api/Usuario/",{
             method: 'POST',
-            headers:{
-                "content-type": "application/json"
-            },
-            body:JSON.stringgify({nombre,correo,telefono})
+            headers:{"content-type": "application/json"},
+            body:JSON.stringify({nombre,correo,telefono})
         });
     }
     return (
